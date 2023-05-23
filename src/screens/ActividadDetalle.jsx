@@ -1,10 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const ActividadDetalle = () => {
+const ActividadDetalle = ({navigation, route}) => {
+
+  const Producto = route.params.ActividadCompleta
   return (
     <View>
-      <Text>ActividadDetalle</Text>
+      <Text>Descripcion: {Producto.Desc}</Text>
+      <Text>Hoarios: {Producto.Horarios}</Text>
+      <Text>Precio: ${Producto.Precio}</Text>
     </View>
   )
 }

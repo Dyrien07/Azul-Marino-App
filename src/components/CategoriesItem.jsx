@@ -4,7 +4,7 @@ import React from 'react'
 
 const CategoriesItem = ({item, onSelected}) => {
   return (
-    <View style ={styles.categoriesItem}>
+    <View style ={[styles.categoriesItem, {backgroundColor: item.color}]}>
         <TouchableOpacity style={styles.container} onPress={()=>onSelected(item)}>
             <View>
                 <Text style ={styles.textContainer}>{item.Titulo}</Text>

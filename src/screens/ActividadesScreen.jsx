@@ -7,8 +7,8 @@ const ActividadesScreen = ({navigation}) => {
 
   const handleSelectedCategory = (item) => {
     navigation.navigate("Actividades", {
-      categoryID: item.ID,
-      name : item.title
+      ActividadCompleta: item,
+      name : item.Titulo
        
     })
   }
