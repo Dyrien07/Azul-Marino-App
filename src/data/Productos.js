@@ -1,0 +1,82 @@
+export const PRODUCTOS = [
+  {
+    ID: 1,
+    Categoria: 1,
+    Name: "Clases de  Natacion Adultos",
+    Desc: "Clases de Natacion para Adultos de todas las edades y niveles",
+    Precio: {
+      unaVezPorSemana: 3000,
+      dosVecesPorSemana: 5000,
+      tresVecesPorSemana: 7000,
+      cuatroVecesPorSemana: 9000,
+    },
+    Horarios: {
+      Lunes: "20:30hs",
+      Martes: "9hs y 20hs",
+      Miercoles: "20:30hs",
+      Jueves: "9hs y 20hs",
+      Viernes: "No hay clases",
+      Sabado: "13hs",
+    },
+  },
+  {
+    ID: 2,
+    Categoria: 6,
+    Name: "Clases de  Natacion Chicos",
+    Desc: "Clases de Natacion para Chicos a partir de 3 años ",
+    Precio: {
+      unaVezPorSemana: 3000,
+      dosVecesPorSemana: 5000,
+      tresVecesPorSemana: 7000,
+      cuatroVecesPorSemana: 9000,
+    },
+    Horarios: {
+      Lunes: "18hs",
+      Martes: "16 y 18hs",
+      Miercoles: "18hs",
+      Jueves: "15hs y 18hs",
+      Viernes: "No hay clases",
+      Sabado: "12hs",
+    },
+  },
+  {
+    ID: 3,
+    Categoria: 2,
+    Name: "Clases de Acuagym ",
+    Desc: "Clases de Acuagym con enfoce al entrenamiento y funcionalidad",
+    Precio: {
+      unaVezPorSemana: 3000,
+      dosVecesPorSemana: 5000,
+      tresVecesPorSemana: 7000,
+      cuatroVecesPorSemana: 9000,
+    },
+    Horarios: {
+      Lunes: "19hs",
+      Martes: "8 y 19hs",
+      Miercoles: "19hs",
+      Jueves: "8hs y 19hs",
+      Viernes: "No hay clases",
+      Sabado: "10hs",
+    },
+  },
+  {
+    ID: 4,
+    Categoria: 3,
+    Name: "Clases de  Matro Natacion",
+    Desc: "Clases de matro natacion a partir de 6 meses de edad. Entran al agua 1 padre y el niño, clases de 45 minutos",
+    Precio: {
+      unaVezPorSemana: 3000,
+    },
+    Horarios: {
+      Sabado: "14",
+    },
+  },
+  {
+    ID: 5,
+    Categoria: 4,
+    Name: "Pileta Libre",
+    Desc: "Pileta libre sin profesor",
+    Precio: 7000,
+    Horarios: "Todos los dias de 8 a 21",
+  },
+];
