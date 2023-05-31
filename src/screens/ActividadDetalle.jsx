@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-const ActividadDetalle = ({navigation, route}) => {
+const ActividadDetalle = () => {
+  const Producto = useSelector(state => state.Actividades.selected)
 
-  const Producto = route.params.ActividadCompleta
+ 
 
 
  
@@ -11,7 +13,7 @@ const ActividadDetalle = ({navigation, route}) => {
     <View>
       <Text>Descripcion: {Producto.Desc}</Text>
       <Text>Hoarios: {Producto.Horarios}</Text>
-      <Text>Precio: ${Producto.Precio}</Text>
+      <Text>Precio: {Producto.Precio}</Text>
     </View>
   )
 }
