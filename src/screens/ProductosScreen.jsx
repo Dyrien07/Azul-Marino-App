@@ -1,10 +1,22 @@
-import { StyleSheet, Text, View,  FlatList} from 'react-native'
+import { StyleSheet, Text, View,  FlatList,  TouchableOpacity} from 'react-native'
 import React from 'react'
 import { PRODUCTOS } from '../data/Productos'
 import ProductItem from '../components/ProductsItem'
+import { useDispatch } from 'react-redux'
+import { addItem } from '../store/actions/cart.action'
 
-const ProductosScreen = ({}) => {
+
+const ProductosScreen = ({navigation}) => {
+  const dispatch = useDispatch()
+
+
+  function verCarrito() {
+      navigation.navigate("Cart")
+  }
+
     const HandleAddCart = (item) => {
+      console.log(item)
+      dispatch(addItem(item))
     }
 
     const renederProduct = ({item}) => (
@@ -23,7 +35,16 @@ const ProductosScreen = ({}) => {
       renderItem={renederProduct}
       keyExtractor={item => item.ID}
       />
+
+      <View style={styles.viewVerCarrito}>
+        <TouchableOpacity style={styles.VerCartButtonStyle} onPress={verCarrito}>
+          <Text style={styles.verCarritoText}>Ver Carrito</Text>
+        </TouchableOpacity>
+      </View>
     </View>
+
+
+    
   )
 }
 
@@ -42,4 +63,19 @@ const styles = StyleSheet.create({
         width : "100%"
 
       },
+      VerCartButtonStyle :{
+        backgroundColor : "green",
+        borderRadius : 50,
+        alignItems:"center",
+    
+      },
+      verCarritoText:{
+        padding : 10,
+        
+      },
+      viewVerCarrito:{
+        height :"10%",
+        width : "50%"
+      }
+
 })

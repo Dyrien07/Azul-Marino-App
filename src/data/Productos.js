@@ -3,7 +3,8 @@ export const PRODUCTOS = [
     ID: 1,
     title : "Antiparras Pileta",
     Precio : 5000,
-    Img: "https://http2.mlstatic.com/D_NQ_NP_838523-MLA48984836078_012022-O.webp"
+    Img: "https://http2.mlstatic.com/D_NQ_NP_838523-MLA48984836078_012022-O.webp",
+   
 },
 {
     ID: 2,

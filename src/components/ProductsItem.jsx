@@ -4,6 +4,8 @@ import React from "react";
 
 
 const ProductItem = ({ item, addCart }) => {
+
+  
     return (
       <View style={styles.categoriesItem}>
         <TouchableOpacity
@@ -12,8 +14,8 @@ const ProductItem = ({ item, addCart }) => {
           <View>
             <Text style={styles.textContainer}>{item.title}</Text>
             <Text style ={styles.PrecioStyle}>${item.Precio}</Text>
-            <TouchableOpacity style = {styles.BottonAddCart}>
-                <Text style = {styles.BottonAddText} onPress={()=>addCart(item)}>Agregar al Carrito</Text>
+            <TouchableOpacity style = {styles.BottonAddCart} onPress={()=>addCart(item)}>
+                <Text style = {styles.BottonAddText} >Agregar al Carrito</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.imageContainer}>
